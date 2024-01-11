@@ -34,10 +34,10 @@
 						<muleVersion>4.4.0</muleVersion>
 						<uri>https://anypoint.mulesoft.com</uri>
                                                 <target>server</target>
-                                                <applicationName>sf-sapi-contracts</applicationName>
+                                                <applicationName>ic-sfdc-contracts1</applicationName>
 						<targetType>server</targetType>
-                                                 <username>vijayalakshmi_28122023</username>
-                                                 <password>Prasad@333</password>
+                                                <username>vijayalakshmi_28122023</username>
+                                                <password>Prasad@333</password>
 						<environment>Sandbox</environment>
 				   </armDeployment>
 		        </configuration>
@@ -59,6 +59,13 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
+			<groupId>10f610c1-3303-4b7e-af82-600a570589c0</groupId>
+			<artifactId>ic-sfdc-contracts-sapi</artifactId>
+			<version>1.0.0</version>
+			<classifier>raml</classifier>
+			<type>zip</type>
+		</dependency>
+		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-apikit-module</artifactId>
 			<version>1.8.2</version>
@@ -68,6 +75,12 @@
 			<groupId>com.mulesoft.connectors</groupId>
 			<artifactId>mule-salesforce-connector</artifactId>
 			<version>10.19.1</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.connectors</groupId>
+			<artifactId>mule-objectstore-connector</artifactId>
+			<version>1.1.6</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
@@ -82,7 +95,7 @@
 		<repository>
 			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/10f610c1-3303-4b7e-af82-600a570589c0/maven</url>
 			<layout>default</layout>
 		</repository>
 		<!-- <repository>
@@ -118,3 +131,4 @@
 	</pluginRepositories>
 
 </project>
+
