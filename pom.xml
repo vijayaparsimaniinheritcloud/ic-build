@@ -31,7 +31,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<armDeployment>
-						<muleVersion>4.4.0</muleVersion>
+						<muleVersion>4.5.2</muleVersion>
 						<uri>https://anypoint.mulesoft.com</uri>
                                                 <target>server</target>
                                                 <applicationName>sf-sapi-vijaya</applicationName>
